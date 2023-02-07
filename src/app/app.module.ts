@@ -20,6 +20,7 @@ import { CertificationsComponent } from './Components/certifications/certificati
 import { HobbiesComponent } from './Components/hobbies/hobbies.component';
 import { HomeComponent } from './Components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ErrorPageComponent } from './Components/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     CertificationsComponent,
     HobbiesComponent,
     HomeComponent,
+    ErrorPageComponent,
   ],
   imports: [
     BrowserModule,

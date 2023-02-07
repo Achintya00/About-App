@@ -1,3 +1,4 @@
+import { ErrorPageComponent } from './Components/error-page/error-page.component';
 import { HomeComponent } from './Components/home/home.component';
 import { CertificationsComponent } from './Components/certifications/certifications.component';
 import { HobbiesComponent } from './Components/hobbies/hobbies.component';
@@ -8,7 +9,7 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { AboutComponent } from './Components/about/about.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+Error;
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'friends', component: FriendsListComponent },
   { path: 'hobbies', component: HobbiesComponent },
   { path: 'certifications', component: CertificationsComponent },
+  { path: '**', component: ErrorPageComponent },
 ];
 
 @NgModule({
